@@ -1,5 +1,3 @@
-
-// import './catalogo.css'
 import Models from './models';
 import React, { useEffect, Fragment } from 'react';
 
@@ -8,38 +6,51 @@ import { getAll } from '../components/action/actions';
 import { Link } from 'react-router-dom';
 
 
-const Catalogo = () => {
-   
-    const modelo = useSelector(state => state.models)
+const Segment = () => {
 
-    const dispatch = useDispatch()
 
-    useEffect(() => {
 
-        dispatch(getAll());
-    }, [getAll])
-console.log(modelo)
+const modelo = useSelector(state => state.models)
+
+const dispatch = useDispatch()
+
+useEffect(() => {
+
+    dispatch(getAll());
+}, [getAll])
+console.log(modelo.segment, "aaaaaaaaaaa")
+
     return (
         <div >
 
             <div style={{ display: "flex" }, { justifyContent: "center" }, { margin: "10vh" }}>
                 <h1 style={{ marginBottom: "5vh" }}>Descubrí todos los modelos </h1>
                 <ul class="nav nav-tabs">
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Filtrar por</a>
-                        
-                        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Todos</a>
-                        
-                        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Autos</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Filtrar por</a>
+                    </li>
+                    <li class="nav-item">
+              
+                            <p class="nav-link disabled">Todos</p>
+               
+                    </li>
 
-                        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Pickups y Comerciales</a>
-                        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">SUVs y Crossovers</a>
-                    </div>
+                    <li class="nav-item">
+                 
+                            <p class="nav-link disabled">Autos</p>
+               
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Pickups y Comerciales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">SUVs y Crossovers</a>
+                    </li>
                 </ul>
 
                 <div className="card-deck d-flex justify-content-around flex-wrap text-center mt-5">
-                    {modelo && modelo.map((m, index) => {
-                    
+                    {modelo.segment && modelo.segment.map((m, index) => {
+
                         const x = (index % 4) === 0;
                         if (modelo.length > 0) {
                             if (x) {
@@ -79,7 +90,7 @@ console.log(modelo)
 
         </div>
 
-    )
+)
 }
 
-export default Catalogo;
+export default Segment;

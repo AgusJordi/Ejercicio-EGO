@@ -8,22 +8,25 @@ const Navbar = () => {
  
  
  
- 
- 
- <nav class="navbar navbar-light bg-light justify-content-evenly">
+ <nav class="navbar border-bottom">
+ <div class="pl-5">
      <Link to="/models">
-<p class="navbar-brand">Modelos</p>
+<p class="navbar-brand m-0 pr-3">Modelos</p>
 </Link>
 <Link to="/datamodels">
-<p class="navbar-brand">Ficha de modelo</p>
+<p class="navbar-brand m-0 ">Ficha de modelo</p>
 </Link>
- 
-  <form class="form-inline">
+</div>
+<div> 
+   <form class="form-inline">
   
   <div class="btn-group">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+    
+  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Right-aligned menu
   </button>
+
   <div class="dropdown-menu dropdown-menu-right">
     <button class="dropdown-item" type="button">Modelos</button>
     <button class="dropdown-item" type="button">Servicios y Accesorios</button>
@@ -43,7 +46,9 @@ const Navbar = () => {
     <button class="dropdown-item" type="button">Acerca de...</button>
   </div>
 </div>
+
   </form>
+  </div>
 </nav>
 
 )

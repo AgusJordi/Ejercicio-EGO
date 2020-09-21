@@ -1,12 +1,14 @@
 import {
     GET_ALL,
-    GET_ONE
-} from './actions'
+    GET_ONE,
+    // GET_SEGMENT,
+} from '../action/actions'
 
 
 const initialState = {
     model: [],
-    models: []
+    models: [],
+    segmento: [],
 }
 
 function rootReducer(state = initialState, action) {
@@ -21,6 +23,9 @@ function rootReducer(state = initialState, action) {
         case GET_ONE: {
             return { ...state, model: action.payload }
         }
+        // case GET_SEGMENT: {
+        //     return { ...state, segmento: action.payload}
+        // }
         default: return state;
     }
 
