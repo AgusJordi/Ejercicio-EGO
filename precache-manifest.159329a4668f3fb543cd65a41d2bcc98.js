@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2c2c0ca189fac5700433895a0843e880",
+    "revision": "acc43ec0a4e64e5fc6bd837772978281",
     "url": "/Ejercicio-Ego/index.html"
   },
   {
-    "revision": "e81d464797ebfb3ab9f5",
+    "revision": "b7f099100ebc1dd56a35",
     "url": "/Ejercicio-Ego/static/css/main.69eda509.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Ejercicio-Ego/static/js/2.185425c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e81d464797ebfb3ab9f5",
-    "url": "/Ejercicio-Ego/static/js/main.e0344fd5.chunk.js"
+    "revision": "b7f099100ebc1dd56a35",
+    "url": "/Ejercicio-Ego/static/js/main.712b33f2.chunk.js"
   },
   {
     "revision": "dfa1a8b2a604c73b105f",
