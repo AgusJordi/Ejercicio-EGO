@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Ejercicio-Ego/static/css/main.69eda509.chunk.css",
+    "main.js": "/Ejercicio-Ego/static/js/main.e0344fd5.chunk.js",
+    "main.js.map": "/Ejercicio-Ego/static/js/main.e0344fd5.chunk.js.map",
+    "runtime-main.js": "/Ejercicio-Ego/static/js/runtime-main.73147d12.js",
+    "runtime-main.js.map": "/Ejercicio-Ego/static/js/runtime-main.73147d12.js.map",
+    "static/js/2.185425c8.chunk.js": "/Ejercicio-Ego/static/js/2.185425c8.chunk.js",
+    "static/js/2.185425c8.chunk.js.map": "/Ejercicio-Ego/static/js/2.185425c8.chunk.js.map",
+    "index.html": "/Ejercicio-Ego/index.html",
+    "precache-manifest.37c582ebc798f74727297409b710e8e2.js": "/Ejercicio-Ego/precache-manifest.37c582ebc798f74727297409b710e8e2.js",
+    "service-worker.js": "/Ejercicio-Ego/service-worker.js",
+    "static/css/main.69eda509.chunk.css.map": "/Ejercicio-Ego/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.185425c8.chunk.js.LICENSE.txt": "/Ejercicio-Ego/static/js/2.185425c8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73147d12.js",
+    "static/js/2.185425c8.chunk.js",
+    "static/css/main.69eda509.chunk.css",
+    "static/js/main.e0344fd5.chunk.js"
+  ]
+}
