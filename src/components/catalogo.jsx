@@ -52,7 +52,7 @@ console.log(modelo)
                                             name={m.name}
                                             year={m.year}
                                             price={m.price}
-                                            photo={m.photo}
+                                            photo={`https://challenge.agenciaego.tech${m.photo}`}
 
                                         />
                                     </div>
