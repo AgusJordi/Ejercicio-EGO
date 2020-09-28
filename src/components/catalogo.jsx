@@ -1,15 +1,13 @@
 
-// import './catalogo.css'
 import Models from './models';
 import React, { useEffect, Fragment } from 'react';
-
 import { useDispatch, useSelector } from "react-redux"
 import { getAll } from '../components/action/actions';
-import { Link } from 'react-router-dom';
+
 
 
 const Catalogo = () => {
-   
+
     const modelo = useSelector(state => state.models)
 
     const dispatch = useDispatch()
@@ -18,7 +16,7 @@ const Catalogo = () => {
 
         dispatch(getAll());
     }, [getAll])
-console.log(modelo)
+    
     return (
         <div >
 
@@ -27,9 +25,9 @@ console.log(modelo)
                 <ul class="nav nav-tabs">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Filtrar por</a>
-                        
+
                         <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Todos</a>
-                        
+
                         <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Autos</a>
 
                         <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Pickups y Comerciales</a>
@@ -39,7 +37,7 @@ console.log(modelo)
 
                 <div className="card-deck d-flex justify-content-around flex-wrap text-center mt-5">
                     {modelo && modelo.map((m, index) => {
-                    
+
                         const x = (index % 4) === 0;
                         if (modelo.length > 0) {
                             if (x) {
